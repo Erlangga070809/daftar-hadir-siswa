@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Login ke Daftar Hadir Siswa">
+  <title>Login - Daftar Hadir Siswa</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+</head>
+<body class="auth-body">
+  <div class="auth-container">
+    <div class="auth-card">
+      <div class="auth-header">
+        <a href="/" class="auth-logo">
+          <img src="/assets/logo.png" alt="Logo Daftar Hadir Siswa" class="auth-logo-img" onerror="this.style.display='none'">
+        </a>
+        <h1 class="auth-title">Selamat Datang</h1>
+        <p class="auth-subtitle">Masuk ke akun Anda untuk melanjutkan</p>
+      </div>
+      <form id="loginForm" class="auth-form">
+        <div class="form-group">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" id="email" name="email" class="form-input" placeholder="nama@sekolah.sch.id" required autocomplete="email">
+        </div>
+        <div class="form-group">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" id="password" name="password" class="form-input" placeholder="Masukkan password" required autocomplete="current-password">
+        </div>
+        <div class="form-group form-checkbox">
+          <label class="checkbox-label">
+            <input type="checkbox" id="rememberMe" name="remember_me" class="checkbox-input">
+            <span class="checkbox-text">Ingat saya</span>
+          </label>
+          <a href="#" class="auth-link" id="forgotPassword">Lupa password?</a>
+        </div>
+        <div id="errorMessage" class="alert alert-danger" style="display: none;"></div>
+        <button type="submit" id="loginButton" class="btn btn-primary btn-block btn-lg">Login</button>
+      </form>
+      <div class="auth-footer">
+        <p class="auth-text">Belum punya akun?</p>
+        <a href="/register" class="auth-link">Daftar sekarang</a>
+      </div>
+    </div>
+  </div>
+  <script src="/js/api.js"></script>
+  <script src="/js/auth.js"></script>
+</body>
+</html>
