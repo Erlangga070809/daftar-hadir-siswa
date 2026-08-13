@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Daftar sebagai Admin sekolah di Daftar Hadir Siswa">
+  <title>Register - Daftar Hadir Siswa</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+</head>
+<body class="auth-body">
+  <div class="auth-container">
+    <div class="auth-card">
+      <div class="auth-header">
+        <a href="/" class="auth-logo">
+          <img src="/assets/logo.png" alt="Logo Daftar Hadir Siswa" class="auth-logo-img" onerror="this.style.display='none'">
+        </a>
+        <h1 class="auth-title">Daftar Sekolah</h1>
+        <p class="auth-subtitle">Buat akun Admin untuk sekolah Anda</p>
+      </div>
+      <form id="registerForm" class="auth-form">
+        <div class="form-group">
+          <label for="fullName" class="form-label">Nama Lengkap</label>
+          <input type="text" id="fullName" name="full_name" class="form-input" placeholder="Nama lengkap Anda" required autocomplete="name">
+        </div>
+        <div class="form-group">
+          <label for="schoolName" class="form-label">Nama Sekolah</label>
+          <input type="text" id="schoolName" name="school_name" class="form-input" placeholder="Nama sekolah" required>
+        </div>
+        <div class="form-group">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" id="email" name="email" class="form-input" placeholder="nama@sekolah.sch.id" required autocomplete="email">
+        </div>
+        <div class="form-group">
+          <label for="phone" class="form-label">Nomor HP</label>
+          <input type="tel" id="phone" name="phone" class="form-input" placeholder="08xxxxxxxxxx" required autocomplete="tel">
+        </div>
+        <div class="form-group">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" id="password" name="password" class="form-input" placeholder="Minimal 6 karakter" required autocomplete="new-password">
+        </div>
+        <div class="form-group">
+          <label for="confirmPassword" class="form-label">Konfirmasi Password</label>
+          <input type="password" id="confirmPassword" name="confirm_password" class="form-input" placeholder="Ulangi password" required autocomplete="new-password">
+        </div>
+        <div id="errorMessage" class="alert alert-danger" style="display: none;"></div>
+        <button type="submit" id="registerButton" class="btn btn-primary btn-block btn-lg">Daftar Sekarang</button>
+      </form>
+      <div class="auth-footer">
+        <p class="auth-text">Sudah punya akun?</p>
+        <a href="/login" class="auth-link">Login sekarang</a>
+      </div>
+    </div>
+  </div>
+  <script src="/js/api.js"></script>
+  <script src="/js/auth.js"></script>
+</body>
+</html>
